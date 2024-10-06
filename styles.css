@@ -11,31 +11,25 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 header {
     background-color: #34495e;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 36px;
-    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
 }
 
 nav ul {
     list-style-type: none;
-    margin-top: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -50,16 +44,17 @@ nav ul li a:hover {
     color: #f39c12;
 }
 
+
 .hero {
     background: url('Img/laut.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 400px; /* Tinggi hero */
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px; /* Tambahkan padding untuk memberikan ruang di dalam hero */
-    margin: 0; /* Pastikan tidak ada margin */
+    padding: 20px;
+    margin: 0;
 }
 
 .hero h2 {
@@ -83,6 +78,19 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 30px;
     color: #34495e;
+}
+
+.rounded-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.nama {
+    margin-top: 15px;
 }
 
 .about p {
@@ -159,4 +167,8 @@ footer p {
     .hero p {
         font-size: 18px;
     }
+}
+.text-center {
+    text-align: center;
+    margin-bottom: 15px;
 }
