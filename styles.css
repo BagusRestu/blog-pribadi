@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    background: url('Img/laut.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 400px; /* Tinggi hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Tambahkan padding untuk memberikan ruang di dalam hero */
+    margin: 0; /* Pastikan tidak ada margin */
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+}
+
+.about, .hobbies, .contact {
+    padding: 50px 0;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.about h2, .hobbies h2, .contact h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hobby-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-basis: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hobby-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-item h3 {
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.hobby-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .hobby-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
